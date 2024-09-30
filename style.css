@@ -18,3 +18,14 @@ img {
     z-index: -10;
     margin: -100px;
 }
+.team-members {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.team-members > * {
+    margin: 10px;
+}
