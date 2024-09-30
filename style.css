@@ -33,3 +33,28 @@ img {
 .team-members > * {
     margin: 10px;
 }
+.terminal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+.cursor {
+    display: inline-block;
+    color: #c4dce6;
+    background-color: #c4dce6;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
