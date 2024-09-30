@@ -10,21 +10,26 @@
 </head>
 
 <body>
+    <div id="click-to-start">> <p>Click/Press space to continue (audio will be played)</p> <</div>
     <audio id="theme-audio" loop style="display: none;">
         <source src="sundown.mp3" type="audio/mpeg">
     </audio>
     <script>
         document.addEventListener('click', function() {
             var audio = document.getElementById('theme-audio');
+            var clickToStart = document.getElementById('click-to-start');
+            clickToStart.style.display = 'none';
             audio.play();
         }, { once: true });
 
         document.addEventListener('keydown', function() {
             var audio = document.getElementById('theme-audio');
+            var clickToStart = document.getElementById('click-to-start');
+            clickToStart.style.display = 'none';
             audio.play();
         }, { once: true });
     </script>
-    <p class="terminal">home@sundown ~ $ <a href="/">home</a> <a href="/projects">projects</a> <span class="cursor">|</span></p>
+    <p class="terminal">guest@sundown ~ $ <a href="/">home</a> <a href="/projects">projects</a> <span class="cursor">|</span></p>
     <img src="teamsundownlogo.png" draggable="false">
     <p>We are a small team made of just 3 enthusiastic teenagers around the world, who enjoy collaborating on innovative and exciting projects.<br>
         We are currently working on Oreneta, a search engine for the <a href="https://ucanet.net">ucanet.net</a> network.<br>
