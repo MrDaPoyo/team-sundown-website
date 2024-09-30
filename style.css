@@ -4,7 +4,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     padding: 0;
-    body: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+a {
+    color: #c4dce6;
+}
+img {
+    height: 50%;
+    z-index: -10;
+    margin: -100px;
 }
