@@ -6,7 +6,7 @@ body{
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    padding: 0;
+    padding: 20px;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
@@ -31,10 +31,24 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: auto;
 }
 .team-members > * {
     margin: 10px;
 }
+
+@media (max-width: 768px) {
+    img {
+        margin-top: -100px;
+    }
+    .team-members {
+        flex-direction: column;
+    }
+    .team-members > * {
+        width: 100%;
+    }
+}
+
 .terminal {
     position: absolute;
     top: 0;
