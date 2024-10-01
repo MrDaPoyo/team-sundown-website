@@ -15,7 +15,7 @@ body{
 a {
     color: #c4dce6;
 }
-img {
+#logo {
     height: 50%;
     z-index: -10;
     margin: -100px;
